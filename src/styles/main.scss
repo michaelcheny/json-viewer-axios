@@ -23,10 +23,10 @@ body {
 
 .App {
   width: 1024px;
-  background-color: lightgray;
   height: 100%;
   display: grid;
   grid-template-rows: 100px 100px auto 200px;
+  gap: 1em;
 }
 
 .header {

@@ -34,6 +34,7 @@
 
 .data {
   font-family: 'IBM Plex Mono';
+  background-color: lightgray;
 }
 
 .json {
@@ -62,12 +63,12 @@ body {
 
 .App {
   width: 1024px;
-  background-color: lightgray;
   height: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 100px 100px auto 200px;
       grid-template-rows: 100px 100px auto 200px;
+  gap: 1em;
 }
 
 .header {
