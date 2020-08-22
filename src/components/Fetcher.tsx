@@ -12,7 +12,7 @@ type FormValues = {
 };
 
 const Fetcher = ({ setData }: FetcherProps) => {
-  const { register, handleSubmit } = useForm<FormValues>();
+  const { register, handleSubmit, errors } = useForm<FormValues>();
 
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
     console.log(data);
@@ -35,8 +35,13 @@ const Fetcher = ({ setData }: FetcherProps) => {
         type="text"
         name="url"
         placeholder="Paste your API endpoint here..."
-        ref={register}
+        ref={register({
+          required: 'This is required',
+          pattern: /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/,
+        })}
       />
+
+      {errors.url?.type === 'pattern' && <p>Please enter a valid API endpoint.</p>}
     </form>
   );
 };
