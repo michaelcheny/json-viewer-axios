@@ -70,8 +70,8 @@ body {
   height: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 100px 100px auto 200px;
-      grid-template-rows: 100px 100px auto 200px;
+  -ms-grid-rows: 100px 100px auto auto;
+      grid-template-rows: 100px 100px auto auto;
   gap: 1em;
 }
 
