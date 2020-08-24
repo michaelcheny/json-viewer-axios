@@ -3,6 +3,7 @@
 @import './input';
 @import './status';
 @import './data';
+@import './header';
 
 * {
   margin: 0;
@@ -23,6 +24,7 @@ body {
 
 .App {
   width: 1024px;
+  max-width: 1024px;
   height: 100%;
   display: grid;
   grid-template-rows: 100px 100px auto auto;

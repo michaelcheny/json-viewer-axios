@@ -1,15 +1,11 @@
-.data {
+.headers {
   font-family: 'IBM Plex Mono';
-  background-color: rgb(243, 243, 243);
+  // background-color: rgb(243, 243, 243);
   border-radius: 3px;
   min-height: 200px;
-  max-width: 1024px;
   border: black 1px solid;
 }
 
 .json {
   padding-left: 3em;
-  // overflow: auto;
-  word-wrap: normal;
-  max-width: 100%;
 }

@@ -37,11 +37,13 @@ const Fetcher = ({ setData }: FetcherProps) => {
         placeholder="Paste your API endpoint here..."
         ref={register({
           required: 'This is required',
-          pattern: /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/,
+          pattern: /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/,
         })}
       />
 
-      {errors.url?.type === 'pattern' && <p>Please enter a valid API endpoint.</p>}
+      {errors.url?.type === 'pattern' && (
+        <p>Please enter a valid API endpoint with HTTP or HTTPS.</p>
+      )}
     </form>
   );
 };

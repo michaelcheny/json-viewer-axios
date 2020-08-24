@@ -7,7 +7,7 @@ import Status from '../components/Status';
 
 const App = () => {
   const [data, setData] = useState<any>({
-    status: '',
+    // status: '',
     // headers: '',
   });
 

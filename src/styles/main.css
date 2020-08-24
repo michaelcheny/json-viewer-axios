@@ -14,6 +14,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   background-color: green;
+  height: 100px;
 }
 
 .input-form input {
@@ -38,7 +39,24 @@
 
 .data {
   font-family: 'IBM Plex Mono';
-  background-color: lightgray;
+  background-color: #f3f3f3;
+  border-radius: 3px;
+  min-height: 200px;
+  max-width: 1024px;
+  border: black 1px solid;
+}
+
+.json {
+  padding-left: 3em;
+  word-wrap: normal;
+  max-width: 100%;
+}
+
+.headers {
+  font-family: 'IBM Plex Mono';
+  border-radius: 3px;
+  min-height: 200px;
+  border: black 1px solid;
 }
 
 .json {
@@ -67,6 +85,7 @@ body {
 
 .App {
   width: 1024px;
+  max-width: 1024px;
   height: 100%;
   display: -ms-grid;
   display: grid;
