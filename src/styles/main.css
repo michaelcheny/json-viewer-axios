@@ -48,6 +48,7 @@
 
 .json {
   padding-left: 3em;
+  overflow: auto;
   word-wrap: normal;
   max-width: 100%;
 }
