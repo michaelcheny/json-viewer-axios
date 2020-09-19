@@ -1,4 +1,4 @@
-import { AxiosResponse } from 'axios';
+// import { AxiosResponse } from 'axios';
 import React, { useState } from 'react';
 import Data from '../components/Data';
 import Headers from '../components/Headers';
